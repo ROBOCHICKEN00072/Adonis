@@ -1,4 +1,4 @@
-Adonis is a server moderation and management system created for use on the Roblox platform.
+Adonis is a server moderation, management and an administration system created for use on the Roblox platform.
 
 Uploaded to GitHub for collaboration and issue tracking.
 
@@ -10,6 +10,7 @@ Quick Start: https://youtu.be/XnhWcfoAJ_o
 
 
 ## How to load a custom version:
+
 When DebugMode is enabled, the loader will try to load the MainModule from the same parent as the Adonis_Loader model instead of requiring the model by ID. This is how I test changes to Adonis before each update, hence why it's called "Debug Mode."
 
 If you want to maintain your own version of the MainModule you need to either enable DebugMode in the loader script and have the MainModule in the same directory as the "Adonis_Loader" model (NOT in the model, just the same PARENT as the model) or you need to upload the MainModule to Roblox and change the ModuleId in the Loader script to your own module's asset ID.
@@ -22,8 +23,12 @@ However, please do not submit issues caused by changes you made to your personal
 Feel free to seek guidance in the development channel on our Discord.
 
 ## Building from source:
+
 This project uses Rojo.
-Follow the installation steps outlined here: https://rojo.space/docs/installation/
+
+Follow the installation steps outlined here: https://rojo.space/docs/installation/.
+
+If you need to get help with Rojo, why not head on here: https://rojo.space/docs/help/
 
 Once installed, download/clone this repository, enter the repo's directory, and run "rojo build -o Adonis.rbxmx" to build a model file or "rojo build -o Adonis.rbxlx" to build a place file (Note: In the place file, you can find the model in ServerScriptService > Adonis_Rojo)
  
